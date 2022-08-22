@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boombit Frontend Challenge</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="resources/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="columns">
+            <div class="column--left">
+                <div class="column__title">
+                    <h2>Shopping Cart</h2>
+                </div>
+                <div class="column__content">
+                    <div id="shopping-cart">
+                        <div class="shopping-cart-item">
+                            <div class="shopping-cart-item__img">
+                                <img src="resources/images/dish_1.png" alt="IMG 1">
+                            </div>
+                            <div class="shopping-cart-item__info">
+                                <div class="shopping-cart-item__name">Lorem lpsum</div>
+                                <div class="shopping-cart-item__id">#465789</div>
+                            </div>
+                            <div class="shopping-cart-item__qty">
+                                <button class="shopping-cart-item__qty-minus">-</button>
+                                <div class="shopping-cart-item__qty-number">1</div>
+                                <button class="shopping-cart-item__qty-plus">+</button>
+                            </div>
+                            <div class="shopping-cart-item__price">$ 8.50</div>
+                            <div class="shopping-cart-item__delete">
+                                <button></button>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item">
+                            <div class="shopping-cart-item__img">
+                                <img src="resources/images/dish_2.png" alt="IMG 2">
+                            </div>
+                            <div class="shopping-cart-item__info">
+                                <div class="shopping-cart-item__name">Lorem lpsum</div>
+                                <div class="shopping-cart-item__id">#465612</div>
+                            </div>
+                            <div class="shopping-cart-item__qty">
+                                <button class="shopping-cart-item__qty-minus">-</button>
+                                <div class="shopping-cart-item__qty-number">1</div>
+                                <button class="shopping-cart-item__qty-plus">+</button>
+                            </div>
+                            <div class="shopping-cart-item__price">$ 8.50</div>
+                            <div class="shopping-cart-item__delete">
+                                <button></button>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item">
+                            <div class="shopping-cart-item__img">
+                                <img src="resources/images/dish_3.png" alt="IMG 3">
+                            </div>
+                            <div class="shopping-cart-item__info">
+                                <div class="shopping-cart-item__name">Lorem lpsum</div>
+                                <div class="shopping-cart-item__id">#785695</div>
+                            </div>
+                            <div class="shopping-cart-item__qty">
+                                <button class="shopping-cart-item__qty-minus">-</button>
+                                <div class="shopping-cart-item__qty-number">1</div>
+                                <button class="shopping-cart-item__qty-plus">+</button>
+                            </div>
+                            <div class="shopping-cart-item__price">$ 8.50</div>
+                            <div class="shopping-cart-item__delete">
+                                <button></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-subtotal">
+                        <div class="shopping-cart-subtotal__title">Subtotal</div>
+                        <div class="shopping-cart-subtotal__price">$30.9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column--right">
+                <div class="column__title">
+                    <h2>Card Details</h2>
+                    <div id="credit-card">
+                        <div class="credit-card__title">Lorem Ipsum</div>
+                        <div class="credit-card__numbers">
+                            <div class="credit-card__number"></div>
+                            <div class="credit-card__number"></div>
+                            <div class="credit-card__number"></div>
+                            <div class="credit-card__number"></div>
+                        </div>
+                        <div class="credit-card__expiration">12 / 20</div>
+                        <div class="credit-card__name">Diana Smith</div>
+                        <div class="credit-card__image">
+                            <img src="resources/images/visa.png" alt="cc_image">
+                        </div>
+                    </div>
+                    <div id="payment-info-container">
+                        <form id="payment-info" action="" method="post">
+                            <div class="payment-info-section">
+                                <div class="payment-info-section__title">
+                                    Name On Card
+                                </div>
+                                <div class="payment-info-section__fields">
+                                    <input type="text" class="payment-info-section__input" value="Diana Smith">
+                                </div>
+                            </div>
+                            <div class="payment-info-section">
+                                <div class="payment-info-section__title">
+                                    Card Number
+                                </div>
+                                <div class="payment-info-section__fields">
+                                    <input type="password" class="payment-info-section__input cc-numbers" value="1234">
+                                    <input type="password" class="payment-info-section__input cc-numbers" value="1234">
+                                    <input type="password" class="payment-info-section__input cc-numbers" value="1234">
+                                    <input type="text" class="payment-info-section__input cc-numbers" value="5432">
+                                </div>
+                            </div>
+                            <div class="payment-info-section">
+                                <div class="payment-info-section__title">
+                                    Expiration Day
+                                </div>
+                                <div class="payment-info-section__title cvv">
+                                    CVV
+                                </div>
+                                <div class="payment-info-section__fields">
+                                    <select name="month" id="month" class="payment-info-section__input month">
+                                        <option>mm</option>
+                                    </select>
+                                    <select name="year" id="year" class="payment-info-section__input year">
+                                        <option>yyyy</option>
+                                    </select>
+                                    <input type="password" class="payment-info-section__input cvv" value="123">
+                                </div>
+                            </div>
+                        </form>
+                        <button class="paymet-info__submit">
+                            Check Out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

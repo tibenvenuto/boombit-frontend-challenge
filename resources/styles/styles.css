@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+}
+.page-wrapper {
+    width: 100%;
+    background-color: #A1B2BE;
+    padding: 5rem 0;
+}
+.columns {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: #E6E8EE;
+    border-radius: 10px;
+    padding: 3rem 5rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 35px -15px #000000;
+}
+.columns .column--left {
+    width: 60%;
+    padding-right: 5rem;
+}
+.columns .column--right {
+    width: 40%;
+    background: #A1B2BE;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+#shopping-cart {
+    margin-top: 5rem;
+    width: 100%;
+}
+#shopping-cart .shopping-cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0 5rem;
+    border-bottom: 1px solid #A1B2BE;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__img {
+    height: 2rem;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__img img {
+    position: relative;
+    bottom: 5rem;
+    width: auto;
+    height: 10rem;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__info .shopping-cart-item__name {
+    line-height: 0.5rem;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__info .shopping-cart-item__id {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    color: gray;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__qty {
+    display: flex;
+    align-self: flex-start;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__qty .shopping-cart-item__qty-number {
+    padding: 0 1.3rem;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__qty .shopping-cart-item__qty-minus,
+#shopping-cart .shopping-cart-item .shopping-cart-item__qty .shopping-cart-item__qty-plus {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 0;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__price {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__delete button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+#shopping-cart .shopping-cart-item .shopping-cart-item__delete button:after {
+    content: "\00d7";
+    font-size: 2.3rem;
+    line-height: 1.5rem;
+    color: #A1B2BE;
+}
+.shopping-cart-subtotal {
+    float: right;
+    margin-top: 2.5rem;
+}
+.shopping-cart-subtotal > * {
+    display: inline-block;
+}
+.shopping-cart-subtotal .shopping-cart-subtotal__price {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+}
+#credit-card {
+    position: relative;
+    left: 5rem;
+    background-color: #1C2029;
+    border-radius: 15px;
+    margin-top: 3rem;
+    padding: 3rem 2rem 2rem;
+}
+#credit-card .credit-card__title {
+    font-size: 1.2rem;
+}
+#credit-card .credit-card__numbers {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+#credit-card .credit-card__numbers .credit-card__number:after {
+    content: "••••";
+    font-size: 1.5rem;
+}
+#credit-card .credit-card__expiration {
+    padding-top: 1rem;
+}
+#credit-card .credit-card__name {
+    padding-top: 1rem;
+    display: inline-block;
+}
+#credit-card .credit-card__image {
+    display: inline-block;
+    float: right;
+}
+#credit-card .credit-card__image img {
+    width: 7rem;
+}
+#payment-info-container {
+    margin-top: 3rem;
+}
+#payment-info-container .payment-info-section {
+    border: 1px solid #D9DBE2;
+    padding: 0.9rem 2.5rem;
+    margin-bottom: 1rem;
+}
+#payment-info-container .payment-info-section .payment-info-section__title {
+    color: #D9DBE2;
+    font-size: 0.6rem;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+}
+#payment-info-container .payment-info-section .payment-info-section__fields .payment-info-section__input {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    font-size: 1.4rem;
+}
+#payment-info-container .payment-info-section .payment-info-section__fields .cc-numbers {
+    display: inline-block;
+    width: 23%;
+}
+#payment-info-container .payment-info-section .payment-info-section__fields .month,
+#payment-info-container .payment-info-section .payment-info-section__fields .year {
+    display: inline-block;
+    width: 40%;
+}
+#payment-info-container .cvv {
+    width: 10%;
+    float: right;
+}
+#payment-info-container .paymet-info__submit {
+    background-color: #383E4F;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1.3rem 7rem;
+    border-radius: 15px;
+    margin: 2rem auto 0;
+    display: block;
+}
